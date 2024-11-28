@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Audit Reports Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    
+    <header class="bg-white shadow-md">
+        <div class=" mx-auto py-4 px-6 md:px-12 flex items-center justify-between">
+            <div class="flex items-center">
+                <img alt="mywebaudit logo" src="assets/icons/logo.svg" class="w-[80%] sm:w-auto" />
+
+            </div>
+          
+            <div class="lg:hidden p-4">
+                <button id="hamburger-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            
+            <nav id="nav-menu"
+                class="hidden z-10 lg:flex flex-col lg:flex-row items-center fixed lg:static top-0 right-0 h-full lg:h-auto w-[280px] lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none lg:items-center lg:justify-between transition-transform transform translate-x-full lg:translate-x-0">
+
+                
+                <div class="p-4 flex justify-end lg:hidden">
+                    <button id="close-btn" class="text-gray-600 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="flex flex-col lg:flex-row font-semibold text-lg gap-3 lg:me-4 p-6 lg:p-0">
+                    <li><a class="hover:text-[#82B440]" href="#">Success Stories</a></li>
+                    <li><a class="hover:text-[#82B440]" href="#">Sample Reports</a></li>
+                    <li><a class="hover:text-[#82B440]" href="#">Pricing</a></li>
+                    <li><a class="hover:text-[#82B440]" href="#">Features</a></li>
+                    <li><a class="hover:text-[#82B440]" href="#">About</a></li>
+                    <li class="relative group">
+                        <a class="hover:text-[#82B440]" href="#">Use Cases</a>
+                        <ul class="absolute hidden group-hover:block bg-white text-gray-600 shadow-lg mt-2 rounded-md">
+                            <li><a class="block px-4 py-2 hover:bg-[#82B440]" href="#">Use Case 1</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-[#82B440]" href="#">Use Case 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="hover:text-[#82B440]" href="#">Blog</a></li>
+                </ul>
+
+                <div class="flex flex-col lg:flex-row gap-4 p-6 lg:p-0">
+                    <button type="button"
+                        class="btn-primary bg-[#82B440] text-white rounded-lg shadow-lg px-4 py-2 text-sm lg:text-lg">
+                        FREE TRIAL
+                    </button>
+                    <button type="button"
+                        class="btn-primary-outline border-2 border-[#82B440] text-[#82B440] rounded-lg shadow-lg px-4 py-2 text-sm lg:text-lg">
+                        Login
+                    </button>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <div class="relative text-white py-4 ">
+      
+        <div class="bg-hero-container">
+            <div class=" mx-auto px-6 py-4 md:px-16 flex flex-col lg:flex-row items-center ">
+                <div class="max-w-3xl flex flex-col gap-4">
+                    <div class="md:w-2/3">
+                        <h1 class="text-2xl md:text-4xl font-bold mb-4">
+                            Audits that help your agency close more deals.
+                        </h1>
+                        <p class="text-[16px] md:text-lg mb-6">
+                            Build trust faster and close more—and bigger—deals with beautiful, actionable, and easy to
+                            understand website audits.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap mb-4">
+                        <div class="flex">
+                            <input class="px-4 py-2 rounded-l-md text-gray-900 text-[14px] sm:text-lg"
+                                placeholder="Email" type="email" />
+                            <button
+                                class="bg-[#82B440] text-[14px] sm:text-lg text-white px-4 py-2 rounded-md hover:bg-[#558a10] ml-[-4px]">
+                                TRY FOR FREE
+                            </button>
+                        </div>
+                        <a
+                            class="bg-transparent text-white px-1 my-4 md:ms-3 py-2 rounded-md uppercase font-bold flex testimonial-card-cta">
+
+                            <span> OR VIEW SUCCESS STORIES</span>
+                            <img src="./assets/icons/right-arrow.svg" alt="icon" class="ms-4 ">
+                        </a>
+                    </div>
+
+                    <p class="mt-4 md:w-1/2">
+                        Runs on ALL popular website platforms from WordPress and Wix to Shopify and Magento.
+                    </p>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center relative">
+                    <img alt="Person smiling" class="rounded-lg shadow-lg" src="/assets/Images/hero-img.png" />
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <section class="bg-white p-6 md:p-16">
+        <div class="text-center pb-8">
+            <h2 class="text-2xl md:text-4xl font-semibold text-[#1F2278] mb-4">
+                Featured and trusted by some of the world's fastest growing companies that serve agencies
+            </h2>
+        </div>
+
+        <div class="px-10">
+            <div class="carousel " data-flickity='{ "groupCells": true, "pageDots": false  }'>
+                <div class="carousel-cell">
+                    <img src="/assets/icons/press-room-lcon.svg" alt="icon" class="slider-icon">
+                </div>
+                <div class="carousel-cell">
+                    <img src="/assets/icons/partnerlogo-icon.svg" alt="icon" class="slider-icon">
+
+                </div>
+                <div class="carousel-cell">
+                    <img src="/assets/icons/ugurus_logo.svg" alt="icon" class="slider-icon">
+
+                </div>
+                <div class="carousel-cell">
+                    <img src="/assets/icons/wp-icon.svg" alt="icon" class="slider-icon">
+
+                </div>
+                <div class="carousel-cell">
+                    <img src="/assets/icons/press-room-lcon.svg" alt="icon" class="slider-icon">
+                </div>
+                <div class="carousel-cell">
+                    <img src="/assets/icons/partnerlogo-icon.svg" alt="icon" class="slider-icon">
+
+                </div>
+                <div class="carousel-cell">
+                    <img src="/assets/icons/ugurus_logo.svg" alt="icon" class="slider-icon">
+
+                </div>
+                <div class="carousel-cell">
+                    <img src="/assets/icons/wp-icon.svg" alt="icon" class="slider-icon">
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <div class=" bg-img-container">
+        <div class="flex justify-center items-center flex-col p-6 md:p-16 ">
+            <div class="max-w-3xl mb-4 md:mb-10">
+                <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-white text-center mb-4">Deliver more value.
+                    Close more deals.</h3>
+                <p class="text-center text-white mb-6">Creating website audits that business owners understand and value
+                    has always been a tedious, time-consuming process full of pain and frustration... Until Now! Leave
+                    the competition in the dust with audits that take you from "Yawn, another sales pitch" to "We want
+                    to work with you!"</p>
+            </div>
+            <div class="flex justify-center flex-col lg:flex-row">
+                <div class="">
+                    <img src="/assets/icons/deliver-icon.svg" alt="img">
+                </div>
+                <div class="flex-[1_1_50%] px-0 py-8 lg:py-0 lg:px-16">
+                    <ul class="text-white">
+                        <li>
+                            <h4 class="font-semibold md:text-xl mb-4 flex gap-2">
+                                <img src="/assets/icons/round-right-icon.svg" alt="icon"
+                                    class="w-4 md:w-auto"><span>Audit sites in minutes.</span>
+                            </h4>
+                            <p class="pb-4 border-b-[1px] text-[12px] md:text-[16px]">Stop wasting hours with multiple
+                                tools and bad-looking results. In just FIVE minutes, you can run an in-depth audit that
+                                produces beautiful reports measuring everything that matters.</p>
+                        </li>
+                        <li>
+                            <h4 class="font-semibold md:text-xl my-4 flex gap-2">
+                                <img src="/assets/icons/round-right-icon.svg" alt="icon"
+                                    class="w-4 md:w-auto"><span>Provide incredible value.</span>
+                            </h4>
+                            <p class="pb-4 border-b-[1px] text-[12px] md:text-[16px]">Move beyond the "just a website"
+                                conversation with 40 data points that analyze a client's online presence. Show them what
+                                they need to succeed—not just what they think they want.</p>
+                        </li>
+                        <li>
+                            <h4 class="font-semibold md:text-xl my-4 flex gap-2">
+                                <img src="/assets/icons/round-right-icon.svg" alt="icon"
+                                    class="w-4 md:w-auto"><span>Close bigger deals faster.</span>
+                            </h4>
+                            <p class="pb-4 text-[12px] md:text-[16px]">Build trust by demonstrating how useful you can
+                                be, then leverage that trust into bigger projects that help your customers more. Stop
+                                selling "just" websites—start selling answers to all their problems.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="bg-white py-8 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center pb-8 max-w-3xl mx-auto">
+                <h2 class="text-2xl md:text-4xl font-semibold text-[#1F2278] mb-4">
+                    Our audit reports have helped agencies
+                    close millions of dollars
+                </h2>
+                <p class="text-[#343434] text-sm md:text-lg">
+                    Use our professionally written and designed audit reports to help your agency close more deals.
+                </p>
+            </div>
+            <div class="w-full mx-auto bg-white p-0 md:p-6">
+                <div class="flex justify-between">
+                  
+                    <button class="tab-button tab-active flex items-center gap-2 justify-center flex-col "
+                        data-target="#tab1">
+                        <img src="/assets/icons/web-audit-icon.svg" alt="icon" class="tab-icon">
+                        Website Audit
+
+                    </button>
+                    <button class="tab-button flex items-center  gap-2 justify-center flex-col " data-target="#tab2">
+                        <img src="/assets/icons/google-audit-icon.svg" alt="icon" class="tab-icon">
+
+                        Google Business Profile Audit
+                    </button>
+                    <button class="tab-button flex items-center  gap-2 justify-center flex-col " data-target="#tab3">
+                        <img src="/assets/icons/search-audit-icon.svg" alt="icon" class="tab-icon">
+
+                        On Page SEO Audit
+                    </button>
+                    <button class="tab-button flex items-center  gap-2 justify-center flex-col " data-target="#tab4">
+                        <img src="/assets/icons/digital-icon.svg" alt="icon" class="tab-icon">
+
+                        Digital Competitive Analysis Audit
+                    </button>
+                    <button class="tab-button flex items-center  gap-2 justify-center flex-col " data-target="#tab5">
+                        <img src="/assets/icons/ecom-icon.svg" alt="icon" class="tab-icon">
+
+                        E-commerce Website Audit
+                    </button>
+                    <button class="tab-button flex items-center  gap-2 justify-center flex-col " data-target="#tab6">
+                        <img src="/assets/icons/more-icon.svg" alt="icon" class="tab-icon">
+
+                        +6 Other
+                        Templates
+                    </button>
+                </div>
+
+              
+                <div class="mt-10">
+                    <div id="tab1" class="tab-content">
+                        <div class="flex justify-between flex-col-reverse md:flex-row ">
+                            <div class="max-w-xl px-0 py-8 lg:py-4 lg:px-0">
+                                <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-[#1F2278] mb-4">Google
+                                    Business Profile
+                                    Audit Report</h3>
+                                <p class=" mb-6 text-[#343434]">Audit and optimize your agency client's Google Business
+                                    Profile to boost their local rankings.
+
+
+                                </p>
+                                <p class=" mb-6 text-[#343434]">This Google Business Profile audit report is perfect for
+                                    generating an actionable checklist of recommended optimization strategies. Implement
+                                    them to help your prospects' and clients' GBP profiles get more visibility and drive
+                                    more online and foot traffic to their businesses.</p>
+                                <p class=" mb-6 text-[#343434]"> Sometimes it’s nice to put in text just to get an idea
+                                    of how text will
+                                    fill in a space on your website.</p>
+                                <p class=" mb-6 text-[#343434]"> Easily brand and personalize our Google Business
+                                    Profile Audit for your agency for free today using our Google Business Profile audit
+                                    report. </p>
+                                <button class=" btn-primary rounded-lg shadow-lg text-[12px] md:text-lg w-full">
+                                    VIEW REPORT
+                                </button>
+                            </div>
+                            <div>
+                                <img src="/assets/Images/google-audit-img.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-content hidden">
+                        <p class="text-gray-700">Content for Tab 2: This is the second tab content.</p>
+                    </div>
+                    <div id="tab3" class="tab-content hidden">
+                        <p class="text-gray-700">Content for Tab 3: This is the third tab content.</p>
+                    </div>
+                    <div id="tab4" class="tab-content hidden">
+                        <p class="text-gray-700">Content for Tab 3: This is the third tab content.</p>
+                    </div>
+                    <div id="tab5" class="tab-content hidden">
+                        <p class="text-gray-700">Content for Tab 3: This is the third tab content.</p>
+                    </div>
+                    <div id="tab6" class="tab-content hidden">
+                        <p class="text-gray-700">Content for Tab 6: This is the third tab content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-white px-6 py-6 md:py-12">
+        <div class="text-center pb-8">
+            <h2 class="text-2xl md:text-4xl font-semibold text-[#1F2278] mb-4">
+                How is My Web Audit Different?
+            </h2>
+            <p class="text-[#343434] text-sm md:text-lg">
+                Web Help you close more deals. Here are just a few reasons why we're different.
+            </p>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
+
+                <div class="pb-8">
+                    <img src="/assets/icons/build-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
+
+                </div>
+
+                <div>
+                    <h3 class="text-lg md:text-2xl font-bold text-[#1F2278] mb-2">Beautiful and Actionable</h3>
+                    <p class="text-[#343434] text-sm md:text-lg">
+                        Build no-fluff audit reports in minutes with lots of beautiful layout options. Designed to
+                        impress—while still being functional and intuitive.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
+                <div class="pb-8">
+                    <img src="/assets/icons/bussiness-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
+
+                </div>
+                <div class="">
+                    <h3 class="text-lg md:text-2xl font-bold text-[#1F2278] mb-2">Measure What Matters</h3>
+                    <p class="text-[#343434] text-sm md:text-lg">
+                        Businesses care about revenue and ROI. We evaluate dozens of points and present them in terms
+                        anyone can understand.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
+                <div class="pb-8">
+                    <img src="/assets/icons/magnet-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
+
+                </div>
+                <div class="">
+                    <h3 class="text-lg md:text-2xl font-bold text-[#1F2278] mb-2">Doubles as a Lead Magnet</h3>
+                    <p class="text-[#343434] text-sm md:text-lg">
+                        Embed a free audit tool on your site. This high-value tool gets 4 times more leads than a
+                        general PDF lead magnet.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
+                <div class="pb-8">
+                    <img src="/assets/icons/audit-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
+
+                </div>
+                <div class="">
+                    <h3 class="text-lg md:text-2xl font-bold text-[#1F2278] mb-2">Crafted to Convert</h3>
+                    <p class="text-[#343434] text-sm md:text-lg">
+                        Audit recommendations appear in easy-to-understand terms that are perfect for connecting with
+                        leads, delivering value and smoothing the sales process.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
+                <div class="pb-8">
+                    <img src="/assets/icons/target-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
+
+                </div>
+                <div class="">
+                    <h3 class="text-lg md:text-2xl font-bold text-[#1F2278] mb-2">Personalized for You</h3>
+                    <p class="text-[#343434] text-sm md:text-lg">
+                        From email messages to CTAs, from logos to countdown timers—we've thought of it all. Just a few
+                        clicks and MWA is truly yours.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
+                <div class="pb-8">
+                    <img src="/assets/icons/review-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
+
+                </div>
+                <div class="">
+                    <h3 class="text-lg md:text-2xl font-bold text-[#1F2278] mb-2">Review Sites in a Snap</h3>
+                    <p class="text-[#343434] text-sm md:text-lg">
+                        Our easy-to-use browser extension helps you audit a site and its competitors—using both manual
+                        and automatic checks—in less than 5 minutes.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
+                <div class="pb-8">
+                    <img src="/assets/icons/sales-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
+
+                </div>
+                <div class="">
+                    <h3 class="text-lg md:text-2xl font-bold text-[#1F2278] mb-2">Ready for your sales process</h3>
+                    <p class="text-[#343434] text-sm md:text-lg">
+                        MWA includes testimonials to build trust, countdown timers to motivate leads, and tested CTAs to
+                        inspire them to buy.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
+                <div class="pb-8">
+                    <img src="/assets/icons/bell-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
+
+                </div>
+                <div class="">
+                    <h3 class="text-lg md:text-2xl font-bold text-[#1F2278] mb-2">Monitors client activity</h3>
+                    <p class="text-[#343434] text-sm md:text-lg">
+                        Get notifications and alerts when sales emails are opened and audits are read—and follow up
+                        faster with hot leads.
+                </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
+                <div class="pb-8">
+                    <img src="/assets/icons/workflow-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
+
+                </div>
+                <div class="">
+                    <h3 class="text-lg md:text-2xl font-bold text-[#1F2278] mb-2">Zapier integration & workflows</h3>
+                    <p class="text-[#343434] text-sm md:text-lg">
+                        Connect the apps you use in your lead generation and sales process with My Web Audit so you can
+                        automate your workflows.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="testimonial-container bg-img-container">
+        <div class="flex justify-center items-center flex-col px-6 py-10 md:p-16 ">
+            <div class="max-w-3xl">
+                <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-white text-center mb-4">Testimonials</h3>
+                <p class="text-center text-white mb-6">Hundreds of web professionals use My Web Audit to build trust,
+                    add value, establish their expertise,stand out from the competition… And close more deals. Here are
+                    just a few.</p>
+            </div>
+            <div class="flex gap-4 flex-col sm:flex-row">
+                <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+
+                    <div class="p-3 md:px-10 md:py-4 md:pt-8">
+                        <h2 class="text-md lg:text-[26px] font-semibold text-gray-800">My Web Audit helped us close a
+                            couple of deals over $20,000!</h2>
+                        <p class=" text-gray-500 text-[14px] lg:text-xl mt-4">
+                            Building trust and delivering value early helped us close a couple of deals over $20,000!
+                        </p>
+                    </div>
+                    <div class="px-10 py-6 flex justify-between items-center ">
+                        <a href="#"
+                            class="text-[#308DD3] text-[14px] lg:text-lg uppercase font-bold flex testimonial-card-cta">
+                            <span> view ALL success stories</span>
+                            <img src="./assets/icons/right-arrow.svg" alt="icon" class="ms-4">
+                        </a>
+
+
+                    </div>
+                    <div class="relative">
+                        <img class="w-full h-48 object-cover" src="./assets/Images/testi-card-m.png"
+                            alt="Profile Image">
+                        <div
+                            class="absolute bottom-0 left-0 bg-gradient-to-b from-[#ffffff00] to-[#4b525db8] p-8 w-full">
+                            <h3 class="text-[14px] lg:text-lg font-bold text-white">Michael D. Wailes
+                            </h3>
+                            <p class="text-[12px] lg:text-[16px] text-white"> Spectrum Interactive Group.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+
+                    <div class="px-10 py-4 pt-8">
+                        <h2 class="text-md lg:text-[26px] font-semibold text-gray-800">My Web Audit helped us close a
+                            couple of deals over $20,000!</h2>
+                        <p class=" text-gray-500 text-[14px] lg:text-xl mt-4">
+                            Building trust and delivering value early helped us close a couple of deals over $20,000!
+                        </p>
+                    </div>
+                    <div class="px-10 py-6 flex justify-between items-center ">
+                        <a href="#"
+                            class="text-[#308DD3] text-[14px] lg:text-lg uppercase font-bold flex testimonial-card-cta">
+                            <span> view ALL success stories</span>
+                            <img src="./assets/icons/right-arrow.svg" alt="icon" class="ms-4">
+                        </a>
+
+
+                    </div>
+                    <div class="relative">
+                        <img class="w-full h-48 object-cover" src="./assets/Images/testi-card-m.png"
+                            alt="Profile Image">
+                        <div
+                            class="absolute bottom-0 left-0 bg-gradient-to-b from-[#ffffff00] to-[#4b525db8] p-8 w-full">
+                            <h3 class="text-[14px] lg:text-lg font-bold text-white">Michael D. Wailes
+                            </h3>
+                            <p class="text-[12px] lg:text-[16px] text-white"> Spectrum Interactive Group.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+
+                    <div class="px-10 py-4 pt-8">
+                        <h2 class="text-md lg:text-[26px] font-semibold text-gray-800">My Web Audit helped us close a
+                            couple of deals over $20,000!</h2>
+                        <p class=" text-gray-500 text-[14px] lg:text-xl mt-4">
+                            Building trust and delivering value early helped us close a couple of deals over $20,000!
+                        </p>
+                    </div>
+                    <div class="px-10 py-6 flex justify-between items-center ">
+                        <a href="#"
+                            class="text-[#308DD3] text-[14px] lg:text-lg uppercase font-bold flex testimonial-card-cta">
+                            <span> view ALL success stories</span>
+                            <img src="./assets/icons/right-arrow.svg" alt="icon" class="ms-4">
+                        </a>
+
+
+                    </div>
+                    <div class="relative">
+                        <img class="w-full h-48 object-cover" src="./assets/Images/testi-card-m.png"
+                            alt="Profile Image">
+                        <div
+                            class="absolute bottom-0 left-0 bg-gradient-to-b from-[#ffffff00] to-[#4b525db8] p-8 w-full">
+                            <h3 class="text-[14px] lg:text-lg font-bold text-white">Michael D. Wailes
+                            </h3>
+                            <p class="text-[12px] lg:text-[16px] text-white"> Spectrum Interactive Group.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="py-6">
+                <button class=" btn-primary rounded-lg shadow-lg text-[12px] md:text-lg w-full">
+                    VIEW ALL TESTIMONIALS
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <section class="bg-white ">
+        <div class="text-center pb-8 p-6 md:p-16">
+            <h2 class="text-2xl md:text-4xl font-semibold text-[#1F2278] mb-4">
+                This is just a placeholder headline, we will replace it once your website.
+            </h2>
+        </div>
+
+        <div class="">
+            <img src="/assets/Images/group-icons.png" alt="icon" class="w-full">
+
+        </div>
+        <div class="text-center p-6 md:p-16">
+            <button class=" btn-primary rounded-lg shadow-lg text-[12px] md:text-lg w-full">
+                VIEW FULL LIST
+            </button>
+        </div>
+    </section>
+    <div class=" bg-img-container">
+        <div class="flex justify-center items-center flex-col p-6 md:p-16 ">
+
+
+            <div class="flex justify-center flex-col-reverse lg:flex-row">
+                <div class="max-w-xl px-0 py-8 lg:py-0 lg:px-16">
+                    <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-white mb-4">Case Studies</h3>
+                    <p class="text-white mb-6">This is just placeholder text. Don’t be alarmed, this is just here to
+                        fill up space since your finalized copy isn’t ready yet. Once we have your content finalized,
+                        we’ll replace this placeholder text with your real content.
+
+
+                    </p>
+                    <p class="text-white mb-6"> Sometimes it’s nice to put in text just to get an idea of how text will
+                        fill in a space on your website.</p>
+                    <button class=" btn-primary rounded-lg shadow-lg text-[12px] md:text-lg w-full">
+                        VISIT SUCESS STORIES PAGE
+                    </button>
+                </div>
+                <div class="">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 max-w-5xl">
+
+                        <!-- Card 1 -->
+                        <div class="group relative text-black rounded-xl p-6 shadow-lg overflow-hidden text-white"
+                            style="background: url('/assets/Images/Artboard.png') center/cover no-repeat;">
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-70 text-white flex flex-col justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-lg">
+                                    John Falke generated $200k in revenue using My Web Audit insights.
+                                </p>
+                                <a href="#" class="mt-4 underline">Read More</a>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold">$200k</p>
+                                <p class="text-sm text-gray-500 mb-4">Worth of revenue</p>
+                                <p class="font-bold">John Falke</p>
+                                <p>Johnny Flash</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="group relative text-black rounded-xl p-6 shadow-lg overflow-hidden text-white"
+                            style="background: url('/assets/Images/artboard2.png') center/cover no-repeat; ">
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-70 text-white flex flex-col justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-lg">
+                                    John Falke generated $200k in revenue using My Web Audit insights.
+                                </p>
+                                <a href="#" class="mt-4 underline">Read More</a>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold">$200k</p>
+                                <p class="text-sm text-gray-500 mb-4">Worth of revenue</p>
+                                <p class="font-bold">John Falke</p>
+                                <p>Johnny Flash</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="group relative text-black rounded-xl p-6 shadow-lg overflow-hidden text-white"
+                            style="background: url('/assets/Images/Artboard.png') center/cover no-repeat;">
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-70 text-white flex flex-col justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-lg">
+                                    Rob Riggs achieved $100,000+ LTV through audits with leads.
+                                </p>
+                                <a href="#" class="mt-4 underline">Read More</a>
+                            </div>
+                            <p class="text-2xl font-bold">$100,000+ LTV</p>
+                            <p class="text-sm text-gray-500 mb-4">Using audits with leads</p>
+                            <p class="font-bold">Rob Riggs</p>
+                            <p>Code Conspirators</p>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="group relative text-black rounded-xl p-6 shadow-lg overflow-hidden text-white"
+                            style="background: url('/assets/Images/artboard2.png') center/cover no-repeat;">
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-70 text-white flex flex-col justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-lg">
+                                    Carol Stambaugh delivers 5-figure projects by presenting audit insights.
+                                </p>
+                                <a href="#" class="mt-4 underline">Read More</a>
+                            </div>
+                            <p class="text-2xl font-bold">5-Figure Projects</p>
+                            <p class="text-sm text-gray-500 mb-4">From presenting audit insights</p>
+                            <p class="font-bold">Carol Stambaugh</p>
+                            <p>RadiateWP</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <div class="bg-[#F1F1F1] pb-0 py-12 px-6 sm:px-16 flex flex-col-reverse lg:flex-row items-center justify-between">
+        <div class="grow shrink basis-[50%] py-8 lg:py-0">
+            <h1 class="text-xl sm:text-2xl md:text-4xl  font-bold text-[#1F2278]">
+                Start closing more deals—faster and easier with incredible audit reports business owners will love
+            </h1>
+            <p class="mt-4 text-[16px] md:text-2xl text-[#343434]">Try My Web Audit FREE for 7 days</p>
+            <div class="mt-6 flex gap-3 md:gap-6 items-center">
+                <button class=" btn-primary rounded-lg shadow-lg text-[12px] md:text-lg w-full">
+                    START YOUR FREE TRIAL
+                </button>
+                <p class="text-[12px] md:text-xl text-[#343434] grow shrink basis-[50%]">No credit card required</p>
+            </div>
+        </div>
+        <div class="mb-8 md:mt-0">
+            <img src="/assets/Images/girl-img.png" alt="Laptop displaying audit reports" class=" mx-auto w-[50vw]">
+        </div>
+    </div>
+    <footer class="bg-white  ">
+        <div class="py-10 px-6 sm:px-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 ">
+                
+                <div>
+                    <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F]">Popular Audit Reports</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Website
+                                Audit</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">E-commerce
+                                Website Audit</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Google
+                                Business Profile Audit</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">On
+                                Page SEO Audit</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Landing
+                                Page Audit</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Return
+                                On Investment Audit</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Page
+                                Speed Insights Audit</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Page
+                                Speed Lead Magnet Audit</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Competitive
+                                Analysis Audit</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">View
+                                All Audit Reports</a></li>
+                    </ul>
+                </div>
+
+                
+                <div>
+                    <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F]">Quick Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">MySiteAuditor
+                                Alternative</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">WooRank
+                                Alternative</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">BrightLocal
+                                Alternative</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Success
+                                Stories</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Pricing</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Features</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Lead
+                                Widgets</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Blog</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Agency
+                                Playbooks</a></li>
+                        <li><a href="#"
+                                class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Roadmap</a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <div>
+                    <div>
+                        <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F]">Help</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Knowledge
+                                    Base</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F] mt-4">Case Studies</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Stoute
+                                    Web Solutions</a></li>
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">RadiateWP</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Code
+                                    Conspirators</a></li>
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Johnny
+                                    Flash</a></li>
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Belgraphix
+                                    Marketing Group</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F] mt-4">Social Media</h3>
+                        <ul class="mt-4 space-y-2 flex items-baseline gap-6">
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline"></a>
+                                <img src="/assets/icons/fb-icon.svg" alt="icon" class="w-6 h-6 cursor-pointer">
+                            </li>
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline"></a>
+                                <img src="/assets/icons/ln-icon.svg" alt="icon" class="w-6 h-6 cursor-pointer">
+                            </li>
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline"></a>
+                                <img src="/assets/icons/yt-icon.svg" alt="icon" class="w-6 h-6 cursor-pointer">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              
+                <div>
+                    <div>
+                        <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F]">Use Cases</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Close
+                                    More Sales</a></li>
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Lead
+                                    Generation</a></li>
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Webinars
+                                    & Workshops</a></li>
+                            <li><a href="#"
+                                    class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Retainers
+                                    & Care Plans</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F] mt-4">Supported Languages</h3>
+                        <div class="flex justify-between items-center">
+                            <ul class="mt-4 space-y-2">
+                                <li><a href="#" class="flex gap-2"> <img src="/assets/icons/de-icon.svg" alt="icon"
+                                            class="w-6 h-6 cursor-pointer">Deutsch</a></li>
+                                <li><a href="#" class="flex gap-2"><img src="/assets/icons/en-icon.svg" alt="icon"
+                                            class="w-6 h-6 cursor-pointer">English</a></li>
+                                <li><a href="#" class="flex gap-2"><img src="/assets/icons/es-icon.svg" alt="icon"
+                                            class="w-6 h-6 cursor-pointer">Español</a></li>
+                            </ul>
+                            <ul class="mt-4 space-y-2">
+
+                                <li><a href="#" class="flex gap-2"><img src="/assets/icons/fr-icon.svg" alt="icon"
+                                            class="w-6 h-6 cursor-pointer">Français </a></li>
+                                <li><a href="#" class="flex gap-2"><img src="/assets/icons/du-icon.svg" alt="icon"
+                                            class="w-6 h-6 cursor-pointer">Nederlands</a></li>
+                                <li><a href="#" class="flex gap-2"><img src="/assets/icons/po-icon.svg" alt="icon"
+                                            class="w-6 h-6 cursor-pointer">Português</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="py-10 px-4 text-center shadow-[0_-1px_0px_rgba(0,0,0,0.1)]">
+            <div class="text-[#343434] text-[14px] md:text-[16px] text-[14px] sm:flex justify-center gap-2">© 2023 My
+                Web Audit. A HireAWiz Venture. <div>
+                    <a href="#" class=" hover:text-[#82B440] hover:underline"> Privacy Policy</a> | <a href="#"
+                        class=" hover:text-[#82B440] hover:underline">Terms and Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+
+        const buttons = document.querySelectorAll('.tab-button');
+        const contents = document.querySelectorAll('.tab-content');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+
+                contents.forEach(content => content.classList.add('hidden'));
+
+
+                buttons.forEach(btn => btn.classList.remove('tab-active'));
+
+
+                const target = button.getAttribute('data-target');
+                document.querySelector(target).classList.remove('hidden');
+
+
+                button.classList.add('tab-active');
+            });
+        });
+
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+        const closeBtn = document.getElementById('close-btn');
+
+       
+        hamburgerBtn.addEventListener('click', () => {
+            navMenu.classList.remove('hidden');
+            navMenu.classList.remove('translate-x-full');
+            navMenu.classList.add('translate-x-0');
+        });
+
+        
+        closeBtn.addEventListener('click', () => {
+            navMenu.classList.add('translate-x-full');
+            navMenu.classList.remove('translate-x-0');
+        });
+    </script>
+</body>
+
+</html>
