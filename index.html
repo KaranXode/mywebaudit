@@ -11,14 +11,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Audit Reports Landing Page</title>
+    <title>Audit Reports</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
-    <header class="bg-white shadow-md">
-        <div class=" mx-auto py-3 px-4 md:px-12 flex items-center justify-between">
+    <header class="bg-white shadow-md ">
+        <div class="main-container mx-auto md:py-8 px-4 flex items-center justify-between">
             <div class="flex items-center">
                 <a href="/"><img alt="mywebaudit logo" src="assets/icons/logo.svg" class="w-[80%] sm:w-auto" /></a>
 
@@ -47,29 +47,45 @@
                     </button>
                 </div>
 
-                <ul class="flex flex-col lg:flex-row font-semibold text-[12px] xl:text-lg gap-3 lg:me-4 p-6 lg:p-0">
+                <ul class="flex flex-col lg:flex-row font-semibold text-[12px] xl:text-lg gap-3 lg:me-4 p-6 lg:p-0 text-[#2B333F]">
                     <li><a class="hover:text-[#82B440]" href="#">Success Stories</a></li>
-                    <li><a class="hover:text-[#82B440]" href="#">Sample Reports</a></li>
+                    <li><a class="hover:text-[#82B440]" href="#">
+                        <div class="dropdown inline-block relative">
+                            <a class="inline-flex items-center">
+                              <span class="mr-1">Sample Reports</span>
+                              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                            </a>
+                            <ul class="dropdown-menu absolute hidden rounded-lg bg-[#F5F5F5] shadow-lg pt-1 w-full">
+                              <li class=""><a class="rounded-t  hover:bg-[#82B440] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Use Case 1</a></li>
+                              <li class=""><a class=" hover:bg-[#82B440] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Use Case 2</a></li>
+                            </ul>
+                          </div>
+                        </a></li>
                     <li><a class="hover:text-[#82B440]" href="#">Pricing</a></li>
                     <li><a class="hover:text-[#82B440]" href="#">Features</a></li>
                     <li><a class="hover:text-[#82B440]" href="#">About</a></li>
                     <li class="relative group">
-                        <a class="hover:text-[#82B440]" href="#">Use Cases</a>
-                        <ul class="absolute hidden group-hover:block bg-white text-gray-600 shadow-lg mt-2 rounded-md">
-                            <li><a class="block px-4 py-2 hover:bg-[#82B440]" href="#">Use Case 1</a></li>
-                            <li><a class="block px-4 py-2 hover:bg-[#82B440]" href="#">Use Case 2</a></li>
-                        </ul>
+                        <div class="dropdown inline-block relative">
+                            <a class="inline-flex items-center">
+                              <span class="mr-1">Use Case</span>
+                              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                            </a>
+                            <ul class="dropdown-menu absolute hidden rounded-lg bg-[#F5F5F5] shadow-lg pt-1 w-full">
+                              <li class=""><a class="rounded-t  hover:bg-[#82B440] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Case 1</a></li>
+                              <li class=""><a class=" hover:bg-[#82B440] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Case 2</a></li>
+                            </ul>
+                          </div>
                     </li>
                     <li><a class="hover:text-[#82B440]" href="#">Blog</a></li>
                 </ul>
 
                 <div class="flex flex-col lg:flex-row gap-4 p-6 lg:p-0">
                     <button type="button"
-                        class="btn-primary bg-[#82B440] text-white rounded-lg shadow-lg px-4 py-2 text-sm xl:text-lg">
+                        class="btn-primary bg-[#82B440] text-white rounded-lg shadow-lg text-sm xl:text-lg">
                         FREE TRIAL
                     </button>
                     <button type="button"
-                        class="btn-primary-outline border-2 border-[#82B440] text-[#82B440] rounded-lg shadow-lg px-4 py-2 text-sm xl:text-lg">
+                        class="btn-primary-outline border-1 border-[#82B440] text-[#82B440] rounded-lg shadow-lg px-10 py-2 text-sm xl:text-lg">
                         Login
                     </button>
                 </div>
@@ -80,7 +96,7 @@
     <div class="relative text-white py-2 md:py-4 ">
 
         <div class="bg-hero-container">
-            <div class=" mx-auto px-4 py-4 md:px-16 flex flex-col lg:flex-row items-center ">
+            <div class=" main-container mx-auto py-4 flex flex-col lg:flex-row items-center ">
                 <div class="max-w-3xl flex flex-col gap-4">
                     <div class="md:w-2/3">
                         <h1 class="text-2xl md:text-4xl font-bold mb-4">
@@ -91,22 +107,34 @@
                             understand website audits.
                         </p>
                     </div>
-                    <div class="flex flex-wrap mb-4">
-                        <div class="flex">
-                            <input class="px-4 py-2 rounded-l-md text-gray-900 text-[14px] sm:text-lg"
-                                placeholder="Email" type="email" />
+                    <div class="flex flex-wrap items-center mb-4">
+                      
+                        <div class="flex max-w-[420px] w-full sm:w-auto">
+                            <input 
+                                class="px-4 py-2 rounded-l-md text-gray-900 text-[14px] sm:text-lg  sm:w-auto border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#82B440] focus:border-transparent"
+                                placeholder="Email"
+                                type="email" 
+                                aria-label="Enter your email"
+                                required />
                             <button
-                                class="bg-[#82B440] text-[14px] sm:text-lg text-white px-4 py-2 rounded-md hover:bg-[#558a10] ml-[-8px]">
+                                class="bg-[#82B440] text-[14px] sm:text-[16px] font-bold text-white px-4 py-2 rounded-r-md hover:bg-[#558a10] focus:outline-none focus:ring-2 focus:ring-[#558a10] focus:ring-offset-2 transition-all duration-200"
+                                aria-label="Try for free">
                                 TRY FOR FREE
                             </button>
                         </div>
-                        <a
-                            class="bg-transparent text-white px-1 my-4 md:ms-3 py-2 rounded-md uppercase font-bold flex hero-cta">
-
-                            <span> OR VIEW SUCCESS STORIES</span>
-                            <img src="./assets/icons/right-arrow.svg" alt="icon" class="ms-4 hero-cta-icon ">
-                        </a>
+                    
+                
+                        <div class="mt-4 sm:mt-0 sm:ml-4">
+                            <a
+                                href="#"
+                                class="hero-cta bg-transparent text-white px-1 py-2 rounded-md uppercase font-bold flex items-center  focus:ring-2 focus:ring-white"
+                                aria-label="View Success Stories">
+                                <span>OR VIEW SUCCESS STORIES</span>
+                                <img src="./assets/icons/right-arrow.svg" alt="Right arrow icon" class="ml-4 relative left-[5px] hero-cta-icon">
+                            </a>
+                        </div>
                     </div>
+                    
 
                     <p class="mt-4 md:w-1/2">
                         Runs on ALL popular website platforms from WordPress and Wix to Shopify and Magento.
@@ -120,7 +148,8 @@
 
 
     </div>
-    <section class="bg-white p-4 md:p-16">
+    
+    <section class="bg-white main-container p-8">
         <div class="text-center pb-8">
             <h2 class="text-2xl md:text-4xl font-semibold text-[#1F2278] mb-4">
                 Featured and trusted by some of the world's fastest growing companies that serve agencies
@@ -166,7 +195,7 @@
     </section>
 
     <div class=" bg-img-container">
-        <div class="flex justify-center items-center flex-col p-4 md:p-16 ">
+        <div class="flex justify-center items-center flex-col  md:p-8 main-container ">
             <div class="max-w-3xl mt-3 mb-4 md:mb-10">
                 <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-white text-center mb-4">Deliver more value.
                     Close more deals.</h3>
@@ -489,7 +518,7 @@
     </section>
 
     <div class="testimonial-container bg-img-container">
-        <div class="flex justify-center items-center flex-col px-4 py-10 md:p-16 ">
+        <div class="flex justify-center items-center flex-col py-10 md:p-16 main-container ">
             <div class="max-w-3xl">
                 <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-white text-center mt-4 mb-4">Testimonials
                 </h3>
