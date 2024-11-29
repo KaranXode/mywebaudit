@@ -83,7 +83,7 @@ body {
   background-image: url("/assets/Images/hero-bg.png");
   background-position: center;
   background-size: cover;
-  padding: 8% 0 20% 0;
+  padding: 8% 0 10% 0;
 }
 .bg-img-container {
   background-image: url("/assets/Images/testimonial-bg.png");
@@ -229,5 +229,8 @@ body {
   }
   .tab-active::before {
     height: 2px;
+  }
+  .bg-hero-container {
+    padding: 8% 0 20% 0;
   }
 }
