@@ -79,6 +79,20 @@ body {
   background-size: cover;
   padding: 20% 0;
 }
+.hero-cta{
+    position: relative;
+}
+.hero-cta::before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 1px;
+    bottom: -4px;
+  }
+  .hero-cta-icon{
+    filter: brightness(10);
+  }
 .testimonial-card-cta {
   position: relative;
 }
@@ -88,7 +102,7 @@ body {
   background-color: #308dd3;
   width: 100%;
   height: 1px;
-  bottom: 0;
+  bottom: -4px;
 }
 .tab-button {
   background: #f2f7fe;
@@ -117,6 +131,70 @@ body {
   filter: brightness(0) saturate(100%) invert(21%) sepia(15%) saturate(5901%)
     hue-rotate(212deg) brightness(83%) contrast(103%);
 }
+
+.card {
+    width: 100%; /* Full width by default for smaller screens */
+    max-width: 370px; /* Max width to maintain original size on larger screens */
+    height: auto;
+    aspect-ratio: 4 / 3; /* Maintain aspect ratio for responsiveness */
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-bg-img {
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the card without distortion */
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    padding: 16px;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 0 0 16px 16px;
+    z-index: 1;
+}
+
+.card-content-hover {
+    opacity: 0;
+    color: #ffffff;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.71);
+    z-index: 2;
+}
+
+/* Hover effect */
+.card:hover .card-content-hover {
+    opacity: 1;
+}
+
+/* 
+@media (min-width: 768px) {
+    .card {
+        width: 50%; 
+        max-width: 370px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 370px; 
+    }
+} */
+
+
+
 
 @media (max-width: 991px) {
   .tab-icon {
