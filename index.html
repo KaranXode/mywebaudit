@@ -18,9 +18,9 @@
 <body>
 
     <header class="bg-white shadow-md ">
-        <div class="main-container mx-auto md:py-8 px-4 flex items-center justify-between">
+        <div class="wrapper mx-auto py-4 lg:py-[30px] px-3  flex items-center justify-between">
             <div class="flex items-center">
-                <a href="/"><img alt="mywebaudit logo" src="assets/icons/logo.svg" class="w-[80%] sm:w-auto" /></a>
+                <a href="/"><img alt="mywebaudit logo" src="assets/icons/logo.svg" class="max-w-[176px] w-[90%] xl:w-full" /></a>
 
             </div>
 
@@ -38,7 +38,7 @@
                 class="hidden z-10 lg:flex flex-col lg:flex-row items-center fixed lg:static top-0 right-0 h-full lg:h-auto w-[280px] lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none lg:items-center lg:justify-between transition-transform transform translate-x-full lg:translate-x-0">
 
 
-                <div class="p-6 flex justify-end lg:hidden">
+                <div class="px-6 py-8 flex justify-end lg:hidden">
                     <button id="close-btn" class="text-gray-600 focus:outline-none">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@
                     </button>
                 </div>
 
-                <ul class="flex flex-col lg:flex-row font-semibold text-[12px] xl:text-lg gap-3 lg:me-4 p-6 lg:p-0 text-[#2B333F]">
+                <ul class="flex flex-col lg:flex-row p-6 lg:p-0 font-[600] text-nav text-[#2B333F] gap-[12px] xl:gap-[18px]">
                     <li><a class="hover:text-[#82B440]" href="#">Success Stories</a></li>
                     <li><a class="hover:text-[#82B440]" href="#">
                         <div class="dropdown inline-block relative">
@@ -55,9 +55,9 @@
                               <span class="mr-1">Sample Reports</span>
                               <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                             </a>
-                            <ul class="dropdown-menu absolute hidden rounded-lg bg-[#F5F5F5] shadow-lg pt-1 w-full">
-                              <li class=""><a class="rounded-t  hover:bg-[#82B440] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Use Case 1</a></li>
-                              <li class=""><a class=" hover:bg-[#82B440] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Use Case 2</a></li>
+                            <ul class="dropdown-menu absolute hidden rounded-lg bg-[#F5F5F5] shadow-lg pt-1 w-full text-nav">
+                              <li class=""><a class="rounded-t  hover:bg-[#82B440] hover:text-white  py-2 px-4 block whitespace-no-wrap" href="#">Use Case 1</a></li>
+                              <li class=""><a class=" hover:bg-[#82B440] hover:text-white py-2  px-4 block whitespace-no-wrap" href="#">Use Case 2</a></li>
                             </ul>
                           </div>
                         </a></li>
@@ -70,7 +70,7 @@
                               <span class="mr-1">Use Case</span>
                               <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                             </a>
-                            <ul class="dropdown-menu absolute hidden rounded-lg bg-[#F5F5F5] shadow-lg pt-1 w-full">
+                            <ul class="dropdown-menu absolute hidden rounded-lg bg-[#F5F5F5] shadow-lg pt-1 w-full text-nav">
                               <li class=""><a class="rounded-t  hover:bg-[#82B440] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Case 1</a></li>
                               <li class=""><a class=" hover:bg-[#82B440] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Case 2</a></li>
                             </ul>
@@ -79,13 +79,13 @@
                     <li><a class="hover:text-[#82B440]" href="#">Blog</a></li>
                 </ul>
 
-                <div class="flex flex-col lg:flex-row gap-4 p-6 lg:p-0">
+                <div class="flex ml-[16px] xl:ml-[30px]">
                     <button type="button"
-                        class="btn-primary bg-[#82B440] text-white rounded-lg shadow-lg text-sm xl:text-lg">
+                        class="free-trial-btn ">
                         FREE TRIAL
                     </button>
                     <button type="button"
-                        class="btn-primary-outline border-1 border-[#82B440] text-[#82B440] rounded-lg shadow-lg px-10 py-2 text-sm xl:text-lg">
+                        class="login-btn">
                         Login
                     </button>
                 </div>
@@ -93,21 +93,21 @@
 
         </div>
     </header>
-    <div class="relative text-white py-2 md:py-4 ">
+    <div class="relative text-white py-2 md:py-4 img-wrapper">
 
         <div class="bg-hero-container">
-            <div class=" main-container mx-auto py-4 flex flex-col lg:flex-row items-center ">
-                <div class="max-w-3xl flex flex-col gap-4">
+            <div class="wrapper mx-auto px-3 flex flex-col lg:flex-row items-center ">
+                <div class="max-w-3xl flex flex-col ">
                     <div class="md:w-2/3 lg:w-4/5">
-                        <h1 class="text-2xl md:text-4xl lg:text-[46px] lg:leading-tight font-bold mb-6">
+                        <h1 class="text-2xl md:text-4xl lg:text-[46px] lg:leading-[62px] font-bold mb-[30px]">
                             Audits that help your agency close more deals.
                         </h1>
-                        <p class="text-[16px] md:text-lg mb-6">
+                        <p class="text-[16px] xl:text-lg  mb-[30px] w-[90%]">
                             Build trust faster and close more—and bigger—deals with beautiful, actionable, and easy to
                             understand website audits.
                         </p>
                     </div>
-                    <div class="flex flex-wrap items-center mb-4">
+                    <div class="flex flex-wrap items-center mb-[30px]">
                       
                         <div class="flex w-full sm:w-auto lg:max-w-[420px] lg:w-full">
                             <input 
@@ -136,7 +136,7 @@
                     </div>
                     
 
-                    <p class="mt-4 md:w-[60%] text-[16px] md:text-lg">
+                    <p class=" md:w-[60%] text-[16px] md:text-lg">
                         Runs on ALL popular website platforms from WordPress and Wix to Shopify and Magento.
                     </p>
                 </div>
@@ -149,9 +149,9 @@
 
     </div>
     
-    <section class="bg-white main-container p-8">
-        <div class="text-center pb-8">
-            <h2 class="text-2xl md:text-4xl font-semibold text-[#1F2278] mb-4">
+    <section class="bg-white wrapper px-3 py-6">
+        <div class=" pb-8 mb-6 max-w-5xl mx-auto">
+            <h2 class="text-2xl text-balance text-center md:text-4xl md:leading-[50px] font-bold text-[#1F2278]">
                 Featured and trusted by some of the world's fastest growing companies that serve agencies
             </h2>
         </div>
@@ -194,46 +194,49 @@
         </div>
     </section>
 
-    <div class=" bg-img-container">
-        <div class="flex justify-center flex-col items-center  md:p-8 main-container ">
-            <div class="max-w-3xl mt-3 mb-4 md:mb-10">
-                <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-white text-center mb-4">Deliver more value.
+    <div class="img-wrapper bg-img-deliver-container  ">
+        <div>
+            <img src="./assets/Images/testimonial-bg.png" alt="img" class="deliver-bg-img">
+        </div>
+        <div class=" flex justify-center flex-col items-center px-3 wrapper lg:absolute inset-0">
+            <div class="max-w-4xl mb-4 md:mb-12 mt-4">
+                <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-white text-center mt-3 mb-4">Deliver more value.
                     Close more deals.</h3>
-                <p class="text-center text-white mb-6">Creating website audits that business owners understand and value
+                <p class="text-center text-white text-lg">Creating website audits that business owners understand and value
                     has always been a tedious, time-consuming process full of pain and frustration... Until Now! Leave
                     the competition in the dust with audits that take you from "Yawn, another sales pitch" to "We want
                     to work with you!"</p>
             </div>
             <div class="flex justify-center flex-col lg:flex-row items-center">
                 <div class="">
-                    <img src="/assets/icons/deliver-icon.svg" alt="img">
+                    <img src="/assets/icons/deliver-icon.svg" alt="img" class="w-[90%] xl:w-auto">
                 </div>
                 <div class="flex-[1_1_50%] px-0 py-8 lg:py-0 md:px-4 xl:px-16">
                     <ul class="text-white">
                         <li>
-                            <h4 class="font-semibold md:text-xl lg:text-2xl mb-4 flex gap-2">
+                            <h4 class="font-semibold md:text-xl lg:text-2xl mb-[22px] flex gap-2">
                                 <img src="/assets/icons/round-right-icon.svg" alt="icon"
                                     class="w-4 md:w-auto"><span>Audit sites in minutes.</span>
                             </h4>
-                            <p class="pb-4 border-b-[1px] text-[12px] md:text-[16px] lg:text-xl">Stop wasting hours with multiple
+                            <p class="pb-9 border-b-[1px] text-[12px] md:text-[16px] lg:text-xl">Stop wasting hours with multiple
                                 tools and bad-looking results. In just FIVE minutes, you can run an in-depth audit that
                                 produces beautiful reports measuring everything that matters.</p>
                         </li>
                         <li>
-                            <h4 class="font-semibold md:text-xl lg:text-2xl my-4 flex gap-2">
+                            <h4 class="font-semibold md:text-xl lg:text-2xl mt-9 mb-[22px] flex gap-2">
                                 <img src="/assets/icons/round-right-icon.svg" alt="icon"
                                     class="w-4 md:w-auto"><span>Provide incredible value.</span>
                             </h4>
-                            <p class="pb-4 border-b-[1px] text-[12px] md:text-[16px] lg:text-xl">Move beyond the "just a website"
+                            <p class="pb-9 border-b-[1px] text-[12px] md:text-[16px] lg:text-xl">Move beyond the "just a website"
                                 conversation with 40 data points that analyze a client's online presence. Show them what
                                 they need to succeed—not just what they think they want.</p>
                         </li>
                         <li>
-                            <h4 class="font-semibold md:text-xl my-4 lg:text-2xl flex gap-2">
+                            <h4 class="font-semibold md:text-xl mt-9 lg:text-2xl mb-[22px] flex gap-2">
                                 <img src="/assets/icons/round-right-icon.svg" alt="icon"
                                     class="w-4 md:w-auto"><span>Close bigger deals faster.</span>
                             </h4>
-                            <p class="pb-4 text-[12px] md:text-[16px] lg:text-xl">Build trust by demonstrating how useful you can
+                            <p class="pb-9 text-[12px] md:text-[16px] lg:text-xl">Build trust by demonstrating how useful you can
                                 be, then leverage that trust into bigger projects that help your customers more. Stop
                                 selling "just" websites—start selling answers to all their problems.</p>
                         </li>
@@ -246,17 +249,17 @@
 
 
     <section class="bg-white py-8 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center pb-8 max-w-3xl mx-auto">
-                <h2 class="text-2xl md:text-4xl font-semibold text-[#1F2278] mb-4">
+        <div class="wrapper">
+            <div class="text-center pb-10 max-w-3xl mx-auto">
+                <h2 class="text-2xl md:text-4xl font-bold text-[#1F2278] mb-5 md:leading-[50px]">
                     Our audit reports have helped agencies
                     close millions of dollars
                 </h2>
-                <p class="text-[#343434] text-sm md:text-lg">
+                <p class="text-[#343434] text-sm md:text-lg w-[90%]">
                     Use our professionally written and designed audit reports to help your agency close more deals.
                 </p>
             </div>
-            <div class="w-full mx-auto bg-white p-0 md:p-6">
+            <div class="w-full mx-auto bg-white ">
                 <div class="flex justify-between">
 
                     <button class="tab-button tab-active flex items-center gap-2 justify-center flex-col "
@@ -298,22 +301,22 @@
                     <div id="tab1" class="tab-content">
                         <div class="flex justify-between flex-col-reverse md:flex-row ">
                             <div class="max-w-xl px-0 py-8 lg:py-4 lg:px-0">
-                                <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-[#1F2278] mb-4">Google
+                                <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-[#1F2278] mb-5 md:leading-[50px]">Google
                                     Business Profile
                                     Audit Report</h3>
-                                <p class=" mb-6 text-[#343434]">Audit and optimize your agency client's Google Business
+                                <p class=" mb-6 text-[#343434] text-lg">Audit and optimize your agency client's Google Business
                                     Profile to boost their local rankings.
 
 
                                 </p>
-                                <p class=" mb-6 text-[#343434]">This Google Business Profile audit report is perfect for
+                                <p class=" mb-6 text-[#343434] text-lg">This Google Business Profile audit report is perfect for
                                     generating an actionable checklist of recommended optimization strategies. Implement
                                     them to help your prospects' and clients' GBP profiles get more visibility and drive
                                     more online and foot traffic to their businesses.</p>
-                                <p class=" mb-6 text-[#343434]"> Sometimes it’s nice to put in text just to get an idea
+                                <p class=" mb-6 text-[#343434] text-lg"> Sometimes it’s nice to put in text just to get an idea
                                     of how text will
                                     fill in a space on your website.</p>
-                                <p class=" mb-6 text-[#343434]"> Easily brand and personalize our Google Business
+                                <p class=" mb-6 text-[#343434] text-lg"> Easily brand and personalize our Google Business
                                     Profile Audit for your agency for free today using our Google Business Profile audit
                                     report. </p>
                                 <button class=" btn-primary rounded-lg shadow-lg text-[12px] md:text-lg w-full">
@@ -375,19 +378,20 @@
 
 
     <section class="bg-white px-4 py-6 md:py-12">
-        <div class="text-center pb-8">
-            <h2 class="text-2xl md:text-4xl font-semibold text-[#1F2278] mb-4">
+       <div class="wrapper">
+        <div class="text-center pb-8 ">
+            <h2 class="text-2xl md:text-4xl font-semibold text-[#1F2278] mb-5">
                 How is My Web Audit Different?
             </h2>
             <p class="text-[#343434] text-sm md:text-lg">
                 Web Help you close more deals. Here are just a few reasons why we're different.
             </p>
         </div>
-        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
 
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
+            <div class="myweb-card ">
 
-                <div class="pb-8">
+                <div class="h-[60px] md:h-[110px] ">
                     <img src="/assets/icons/build-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
 
                 </div>
@@ -402,8 +406,8 @@
             </div>
 
 
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
-                <div class="pb-8">
+            <div class="myweb-card ">
+                <div class="h-[60px] md:h-[110px] ">
                     <img src="/assets/icons/bussiness-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
 
                 </div>
@@ -417,8 +421,8 @@
             </div>
 
 
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
-                <div class="pb-8">
+            <div class="myweb-card ">
+                <div class="h-[60px] md:h-[110px] ">
                     <img src="/assets/icons/magnet-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
 
                 </div>
@@ -432,8 +436,8 @@
             </div>
 
 
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
-                <div class="pb-8">
+            <div class="myweb-card ">
+                <div class="h-[60px] md:h-[110px] ">
                     <img src="/assets/icons/audit-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
 
                 </div>
@@ -447,8 +451,8 @@
             </div>
 
 
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
-                <div class="pb-8">
+            <div class="myweb-card ">
+                <div class="h-[60px] md:h-[110px] ">
                     <img src="/assets/icons/target-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
 
                 </div>
@@ -462,8 +466,8 @@
             </div>
 
 
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
-                <div class="pb-8">
+            <div class="myweb-card ">
+                <div class="h-[60px] md:h-[110px] ">
                     <img src="/assets/icons/review-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
 
                 </div>
@@ -475,8 +479,8 @@
                     </p>
                 </div>
             </div>
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
-                <div class="pb-8">
+            <div class="myweb-card ">
+                <div class="h-[60px] md:h-[110px] ">
                     <img src="/assets/icons/sales-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
 
                 </div>
@@ -488,8 +492,8 @@
                     </p>
                 </div>
             </div>
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
-                <div class="pb-8">
+            <div class="myweb-card ">
+                <div class="h-[60px] md:h-[110px] ">
                     <img src="/assets/icons/bell-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
 
                 </div>
@@ -500,8 +504,8 @@
                         faster with hot leads.
                 </div>
             </div>
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg ">
-                <div class="pb-8">
+            <div class="myweb-card ">
+                <div class="h-[60px] md:h-[110px] ">
                     <img src="/assets/icons/workflow-icon.svg" alt="icon" class="w-[36px] md:w-[60px]">
 
                 </div>
@@ -514,29 +518,33 @@
                 </div>
             </div>
         </div>
+       </div>
 
     </section>
 
-    <div class="testimonial-container bg-img-container">
-        <div class="flex justify-center items-center flex-col py-10 md:p-16 main-container ">
-            <div class="max-w-3xl">
+    <div class="testimonial-container bg-img-testimonial-container relative bg-img-testimonial-container">
+        <div>
+            <img src="/assets/Images/testimonial-bg.png" alt="" class="testimonial-section-img">
+           </div>
+        <div class="wrapper testimonial-bg-content px-3">
+            <div class="max-w-4xl mx-auto">
                 <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-white text-center mt-4 mb-4">Testimonials
                 </h3>
-                <p class="text-center text-white mb-6">Hundreds of web professionals use My Web Audit to build trust,
+                <p class="text-center md:text-lg text-white mb-10">Hundreds of web professionals use My Web Audit to build trust,
                     add value, establish their expertise,stand out from the competition… And close more deals. Here are
                     just a few.</p>
             </div>
-            <div class="flex gap-4 flex-col sm:flex-row">
-                <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+            <div class="flex gap-4  justify-center flex-col items-center md:flex-row">
+                <div class="testimonial-card">
 
-                    <div class="p-3 xl:px-10 xl:py-4 xl:pt-8">
+                    <div class="p-3 xl:p-[60px]">
                         <h2 class="text-md xl:text-[26px] font-semibold text-gray-800">My Web Audit helped us close a
                             couple of deals over $20,000!</h2>
                         <p class=" text-gray-500 text-[14px] xl:text-xl mt-4">
                             Building trust and delivering value early helped us close a couple of deals over $20,000!
                         </p>
                     </div>
-                    <div class="px-3 xl:px-10 py-6 flex justify-between items-center ">
+                    <div class="p-3 xl:px-[60px] xl:pb-8 flex justify-between items-center ">
                         <a href="#"
                             class="text-[#308DD3] text-[12px] xl:text-lg uppercase font-bold flex testimonial-card-cta">
                             <span> view ALL success stories</span>
@@ -550,22 +558,22 @@
                             alt="Profile Image">
                         <div
                             class="absolute bottom-0 left-0 bg-gradient-to-b from-[#ffffff00] to-[#4b525db8] p-4  xl:p-8 w-full">
-                            <h3 class="text-[14px] xl:text-lg font-bold text-white">Michael D. Wailes
+                            <h3 class="text-[14px] xl:text-xl font-bold text-white">Michael D. Wailes
                             </h3>
-                            <p class="text-[12px] xl:text-[16px] text-white"> Spectrum Interactive Group.</p>
+                            <p class="text-[12px] xl:text-lg text-white"> Spectrum Interactive Group.</p>
                         </div>
                     </div>
                 </div>
-                <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+                <div class="testimonial-card">
 
-                    <div class="p-3 xl:px-10 xl:py-4 xl:pt-8">
+                    <div class="p-3 xl:p-[60px]">
                         <h2 class="text-md xl:text-[26px] font-semibold text-gray-800">The first 2 audits I did got me
                             $1500 in recurring revenue.</h2>
                         <p class=" text-gray-500 text-[14px] xl:text-xl mt-4">
                             Building trust and delivering value early helped us close a couple of deals over $20,000!
                         </p>
                     </div>
-                    <div class="px-3 xl:px-10 py-6 flex justify-between items-center ">
+                    <div class="p-3 xl:px-[60px] xl:pb-8 flex justify-between items-center ">
                         <a href="#"
                             class="text-[#308DD3] text-[12px] xl:text-lg uppercase font-bold flex testimonial-card-cta">
                             <span> view ALL success stories</span>
@@ -578,22 +586,22 @@
                         <img class="w-full h-48 object-cover" src="./assets/Images/test-m-2.png" alt="Profile Image">
                         <div
                             class="absolute bottom-0 left-0 bg-gradient-to-b from-[#ffffff00] to-[#4b525db8] p-4  xl:p-8 w-full">
-                            <h3 class="text-[14px] xl:text-lg font-bold text-white">Michael D. Wailes
+                            <h3 class="text-[14px] xl:text-xl font-bold text-white">Michael D. Wailes
                             </h3>
-                            <p class="text-[12px] xl:text-[16px] text-white"> Spectrum Interactive Group.</p>
+                            <p class="text-[12px] xl:text-lg text-white"> Spectrum Interactive Group.</p>
                         </div>
                     </div>
                 </div>
-                <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+                <div class="testimonial-card">
 
-                    <div class="p-3 xl:px-10 xl:py-4 xl:pt-8">
+                    <div class="p-3 xl:p-[60px]">
                         <h2 class="text-md xl:text-[26px] font-semibold text-gray-800">My Web Audit helped us close a
                             couple of deals over $20,000!</h2>
                         <p class=" text-gray-500 text-[14px] xl:text-xl mt-4">
                             Building trust and delivering value early helped us close a couple of deals over $20,000!
                         </p>
                     </div>
-                    <div class="px-3 xl:px-10 py-6 flex justify-between items-center ">
+                    <div class="p-3 xl:px-[60px] xl:pb-8 flex justify-between items-center ">
                         <a href="#"
                             class="text-[#308DD3] text-[12px] xl:text-lg uppercase font-bold flex testimonial-card-cta">
                             <span> view ALL success stories</span>
@@ -606,9 +614,9 @@
                         <img class="w-full h-48 object-cover" src="./assets/Images/test-3.png" alt="Profile Image">
                         <div
                             class="absolute bottom-0 left-0 bg-gradient-to-b from-[#ffffff00] to-[#4b525db8] p-4  xl:p-8 w-full">
-                            <h3 class="text-[14px] xl:text-lg font-bold text-white">Michael D. Wailes
+                            <h3 class="text-[14px] xl:text-xl font-bold text-white">Michael D. Wailes
                             </h3>
-                            <p class="text-[12px] xl:text-[16px] text-white"> Spectrum Interactive Group.</p>
+                            <p class="text-[12px] xl:text-lg text-white"> Spectrum Interactive Group.</p>
                         </div>
                     </div>
                 </div>
@@ -617,7 +625,7 @@
 
 
             </div>
-            <div class="py-8 md:py-6">
+            <div class="py-6 mb-4  lg:pt-12 mx-auto text-center">
                 <button class=" btn-primary rounded-lg shadow-lg text-[12px] md:text-lg w-full">
                     VIEW ALL TESTIMONIALS
                 </button>
@@ -626,7 +634,7 @@
 
     </div>
     <section class="bg-white ">
-        <div class="text-center pb-8 p-4 md:p-16">
+        <div class="text-center pb-8 p-4 md:py-16 lg:w-[56%] mx-auto">
             <h2 class="text-2xl md:text-4xl font-semibold text-[#1F2278] mb-4">
                 This is just a placeholder headline, we will replace it once your website.
             </h2>
@@ -642,20 +650,22 @@
             </button>
         </div>
     </section>
-    <div class=" bg-img-container">
-        <div class="flex justify-center items-center flex-col p-4 py-8 md:p-16 ">
-
-
-            <div class="flex justify-center flex-col-reverse xl:flex-row my-4 xl:items-center">
+    <div class="relative bg-img-case-studie-container">
+       <div>
+        <img src="/assets/Images/testimonial-bg.png" alt="" class="case-studie-section-img">
+       </div>
+        
+        <div class="wrapper case-studie-section px-3">
+            <div class="flex justify-center flex-col-reverse xl:flex-row my-4 xl:items-center ">
                 <div class="max-w-xl px-0 py-8 xl:py-0 xl:px-16">
-                    <h3 class="text-xl sm:text-2xl md:text-4xl  font-bold text-white mb-4">Case Studies</h3>
-                    <p class="text-white mb-6">This is just placeholder text. Don’t be alarmed, this is just here to
+                    <h3 class="text-xl sm:text-2xl md:text-4xl  md:leading-[50px] font-bold text-white mb-5">Case Studies</h3>
+                    <p class="text-white  md:text-lg mb-6">This is just placeholder text. Don’t be alarmed, this is just here to
                         fill up space since your finalized copy isn’t ready yet. Once we have your content finalized,
                         we’ll replace this placeholder text with your real content.
 
 
                     </p>
-                    <p class="text-white mb-6"> Sometimes it’s nice to put in text just to get an idea of how text will
+                    <p class="text-white md:text-lg mb-10"> Sometimes it’s nice to put in text just to get an idea of how text will
                         fill in a space on your website.</p>
                     <button class=" btn-primary rounded-lg shadow-lg text-[12px] md:text-lg w-full">
                         VISIT SUCESS STORIES PAGE
@@ -676,7 +686,7 @@
                             <p class="text-lg sm:text-xl lg:text-2xl font-bold mt-2">Rob Riggs</p>
                             <p class="text-sm sm:text-base lg:text-lg">Code Conspirators</p>
                         </div>
-                        <div class="card-content-hover opacity-[1]">
+                        <div class="card-content-hover">
                             <p class="text-sm sm:text-base lg:text-lg">
                                 For Stoute Web Solutions, My Web Audit has meant an 80% close rate — and a 100X ROI
                             </p>
@@ -776,13 +786,14 @@
     </div>
 
     </div>
-    <div class="bg-[#F1F1F1] pb-0 py-12 px-4 sm:px-16 flex flex-col-reverse lg:flex-row items-center justify-between">
-        <div class="grow shrink basis-[50%] py-8 lg:py-0">
-            <h1 class="text-xl sm:text-2xl md:text-4xl  font-bold text-[#1F2278]">
+  <div class="bg-[#F1F1F1] img-wrapper">
+    <div class="wrapper  pb-0 py-12 px-4 sm:px-16 flex flex-col-reverse lg:flex-row items-center justify-between">
+        <div class="max-w-3xl py-8 lg:py-0">
+            <h1 class="text-xl sm:text-2xl md:text-[36px]  font-bold text-[#1F2278] md:leading-[50px]">
                 Start closing more deals—faster and easier with incredible audit reports business owners will love
             </h1>
-            <p class="mt-4 text-[16px] md:text-2xl text-[#343434]">Try My Web Audit FREE for 7 days</p>
-            <div class="mt-6 flex gap-3 md:gap-6 items-center">
+            <p class="mt-5 text-[16px] md:text-[26px] text-[#343434]">Try My Web Audit FREE for 7 days</p>
+            <div class="mt-5 flex gap-3 md:gap-6 items-center">
                 <button class=" btn-primary rounded-lg shadow-lg text-[12px] md:text-lg w-full">
                     START YOUR FREE TRIAL
                 </button>
@@ -790,17 +801,18 @@
                     required</p>
             </div>
         </div>
-        <div class="mb-8 md:mt-0">
-            <img src="/assets/Images/girl-img.png" alt="Laptop displaying audit reports" class=" mx-auto w-[50vw]">
+        <div class="mb-8 md:mt-0 girl-img-wrapper">
+            <img src="/assets/Images/girl-img.png" alt="Laptop displaying audit reports" class="girl-img">
         </div>
     </div>
-    <footer class="bg-white  ">
-        <div class="py-10 px-6 sm:px-16">
+  </div>
+    <footer class="bg-white wrapper ">
+        <div class="py-10 px-3">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 ">
 
                 <div>
                     <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F]">Popular Audit Reports</h3>
-                    <ul class="mt-4 space-y-2">
+                    <ul class="mt-6 space-y-2">
                         <li><a href="#"
                                 class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Website
                                 Audit</a></li>
@@ -837,7 +849,7 @@
 
                 <div>
                     <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F]">Quick Links</h3>
-                    <ul class="mt-4 space-y-2">
+                    <ul class="mt-6 space-y-2">
                         <li><a href="#"
                                 class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">MySiteAuditor
                                 Alternative</a></li>
@@ -883,7 +895,7 @@
                     </div>
                     <div>
                         <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F] mt-4">Case Studies</h3>
-                        <ul class="mt-4 space-y-2">
+                        <ul class="mt-6 space-y-2">
                             <li><a href="#"
                                     class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Stoute
                                     Web Solutions</a></li>
@@ -903,7 +915,7 @@
                     </div>
                     <div>
                         <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F] mt-4">Social Media</h3>
-                        <ul class="mt-4 space-y-2 flex items-baseline gap-6">
+                        <ul class="mt-6 space-y-2 flex items-baseline gap-6">
                             <li><a href="#"
                                     class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline"></a>
                                 <img src="/assets/icons/fb-icon.svg" alt="icon" class="w-6 h-6 cursor-pointer">
@@ -923,7 +935,7 @@
                 <div>
                     <div>
                         <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F]">Use Cases</h3>
-                        <ul class="mt-4 space-y-2">
+                        <ul class="mt-6 space-y-2">
                             <li><a href="#"
                                     class="text-[#343434] text-[14px] md:text-[16px] hover:text-[#82B440] hover:underline">Close
                                     More Sales</a></li>
@@ -942,7 +954,7 @@
                     <div>
                         <h3 class="text-[16px] md:text-xl font-semibold text-[#2B333F] mt-4">Supported Languages</h3>
                         <div class="flex justify-between items-center">
-                            <ul class="mt-4 space-y-2 ">
+                            <ul class="mt-6 space-y-2 ">
                                 <li><a href="#" class="flex gap-2"> <img src="/assets/icons/de-icon.svg" alt="icon"
                                             class="w-6 h-6 cursor-pointer">Deutsch</a></li>
                                 <li><a href="#" class="flex gap-2"><img src="/assets/icons/en-icon.svg" alt="icon"
@@ -950,7 +962,7 @@
                                 <li><a href="#" class="flex gap-2"><img src="/assets/icons/es-icon.svg" alt="icon"
                                             class="w-6 h-6 cursor-pointer">Español</a></li>
                             </ul>
-                            <ul class="mt-4 space-y-2 px-4">
+                            <ul class="mt-6 space-y-2 px-4">
 
                                 <li><a href="#" class="flex gap-2"><img src="/assets/icons/fr-icon.svg" alt="icon"
                                             class="w-6 h-6 cursor-pointer">Français </a></li>
@@ -967,7 +979,7 @@
 
             </div>
         </div>
-        <div class="py-10 px-4 text-center shadow-[0_-1px_0px_rgba(0,0,0,0.1)]">
+        <div class="py-10 px-3 text-center shadow-[0_-1px_0px_rgba(0,0,0,0.1)]">
             <div class="text-[#343434] text-[14px] md:text-[16px] text-[14px] sm:flex justify-center gap-2">© 2024 My
                 Web Audit. A HireAWiz Venture. <div>
                     <a href="#" class=" hover:text-[#82B440] hover:underline"> Privacy Policy</a> | <a href="#"
